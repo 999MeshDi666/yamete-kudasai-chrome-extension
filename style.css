@@ -1,0 +1,19 @@
+.container{
+    width: 300px;
+}
+button{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    margin: 10px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+button.current{
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+}

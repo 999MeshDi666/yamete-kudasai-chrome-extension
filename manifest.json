@@ -1,0 +1,31 @@
+{
+    "name": "Yamete Kudasai Extension",
+    "description": "Hentai sounds for any key",
+    "version": "1.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "permissions": ["storage", "activeTab"],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/images/icon/yamkIcon16.png",
+        "32": "/images/icon/yamkIcon32.png",
+        "48": "/images/icon/yamkIcon48.png",
+        "128": "/images/icon/yamkIcon128.png"
+      }
+    },
+    "icons": {
+      "16": "/images/icon/yamkIcon16.png",
+      "32": "/images/icon/yamkIcon32.png",
+      "48": "/images/icon/yamkIcon48.png",
+      "128": "/images/icon/yamkIcon128.png"
+    },
+  
+    "content_scripts":[{
+        "matches": ["<all_urls>"],
+        "js": ["sound.js"]        
+    }]
+  }
